@@ -5,6 +5,13 @@ JSON Values are returned with Patients Heart Rate, ECG values, and Name (which i
 
 This is used to simulate medical IOT devices.
 
+To run on CLI/Testing:
+
+1. cd to the project directory.
+2. python app.py
+
+In another terminal or browser:
+
 curl -s localhost:5000/api/getPatientData/<patient name>
 
 i.e. curl -s localhost:5000/api/getPatientData/David
