@@ -11,7 +11,7 @@ import requests
 import simplejson
 import json
 
-import pylab
+#import pylab
 import scipy.signal as signal
 import numpy
 import random
