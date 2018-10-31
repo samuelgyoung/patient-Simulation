@@ -9,27 +9,28 @@ This is used to simulate medical IOT devices.
 
 To run on CLI/Testing:
 
-1. cd to the project directory.
-2. python app.py
+ 1. cd to the project directory.
+ 2. python app.py
 
 In another terminal or browser:
 
-curl -s localhost:5000/api/getPatientData/<patient name>
+ curl -s localhost:5000/api/getPatientData/<patient name>
 
-i.e. curl -s localhost:5000/api/getPatientData/David
+ i.e. curl -s localhost:5000/api/getPatientData/David
 
 ## Docker
 
 To Build:
 
-docker build -t patient-simulation .
+ docker build -t patient-simulation .
 
 To Run:
-docker run -p 5000:5000 --rm -it patient-simulation
+
+ docker run -p 5000:5000 --rm -it patient-simulation
 
 You can now go to localhost:5000/api/getPatientData/<patient name>
  
- To Save to a tar file so you can import into other dockers (manually):
+To Save to a tar file so you can import into other dockers (manually):
  
  save -o ./patient-simulation.tar patient-simulation
  
